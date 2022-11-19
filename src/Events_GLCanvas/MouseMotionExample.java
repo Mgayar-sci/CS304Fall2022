@@ -42,7 +42,6 @@ public class MouseMotionExample extends JFrame {
 // 2) it is our KeyListener
         MouseMotionDisplay mmd = new MouseMotionDisplay();
 //only three JOGL lines of code ... and here they are
-        GLCapabilities glcaps = new GLCapabilities();
         glcanvas = new GLCanvas();
         glcanvas.addGLEventListener(mmd);
         glcanvas.addMouseMotionListener(mmd);

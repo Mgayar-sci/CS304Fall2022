@@ -6,7 +6,6 @@ package Events_GLCanvas;
  * and open the template in the editor.
  */
 
-import com.sun.opengl.util.*;
 import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.event.*;

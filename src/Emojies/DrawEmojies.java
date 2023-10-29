@@ -17,15 +17,15 @@ public class DrawEmojies extends JFrame {
     int choice = 0;
     GLEventListener[] Listeners = { wowListener, starListener };
     if (args.length > 0) {
-      try {
         choice = Integer.parseInt(args[0]);
-        new DrawEmojies(Listeners[choice]);
-        animator.start();
-      } catch (ArrayIndexOutOfBoundsException e) {
-        System.err.println("Only 2 listeners are available!");
-      } catch (NumberFormatException e) {
-        System.err.println("Please enter an integer!");
-      }
+    }
+    try {
+      new DrawEmojies(Listeners[choice]);
+      animator.start();
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.err.println("Only 2 listeners are available!");
+    } catch (NumberFormatException e) {
+      System.err.println("Please enter an integer!");
     }
   }
 
